@@ -35,9 +35,8 @@ export default {
     //请求多个数据
     getHomeMultidata().then(res => {
       console.log(res)
-      // 1.请求多个数据
-      this.banners = res.data.banner.list
-      this.recommends = res.data.recommend.list
+      this.banners = res.data.banner
+      this.recommends = res.data.recommend
       // this.keywords = res.data.keywords
       // this.dKeyword = res.data.dKeyword
     })

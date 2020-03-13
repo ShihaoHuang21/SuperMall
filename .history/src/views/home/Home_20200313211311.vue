@@ -26,20 +26,19 @@ export default {
     return {
       // result: null,
       banners: [],
-      recommends: []
-      // keywords: [],
-      // dKeyword: []
+      recommends: [],
+      keywords: [],
+      dKeyword: []
     }
   },
   created() {
     //请求多个数据
     getHomeMultidata().then(res => {
       console.log(res)
-      // 1.请求多个数据
-      this.banners = res.data.banner.list
-      this.recommends = res.data.recommend.list
-      // this.keywords = res.data.keywords
-      // this.dKeyword = res.data.dKeyword
+      this.banners = res.data.banners
+      this.recommends = res.data.recommend
+      this.keywords = res.data.keywords
+      this.dKeyword = res.data.dKeyword
     })
   }
 }

@@ -5,7 +5,6 @@
       <div slot="center">购物街</div>
     </nav-bar>
     <home-swiper :banners="banners"></home-swiper>
-    <recommend-view :recommends="recommends"></recommend-view>
   </div>
 </template>
 
@@ -19,27 +18,25 @@ export default {
   name: '',
   components: {
     NavBar,
-    HomeSwiper,
-    RecommendView
+    HomeSwiper
   },
   data() {
     return {
       // result: null,
       banners: [],
-      recommends: []
-      // keywords: [],
-      // dKeyword: []
+      recommends: [],
+      keywords: [],
+      dKeyword: []
     }
   },
   created() {
     //请求多个数据
     getHomeMultidata().then(res => {
       console.log(res)
-      // 1.请求多个数据
-      this.banners = res.data.banner.list
-      this.recommends = res.data.recommend.list
-      // this.keywords = res.data.keywords
-      // this.dKeyword = res.data.dKeyword
+      this.banners = res.data.banner
+      this.recommend = res.data.recommend
+      this.keywords = res.data.keywords
+      this.dKeyword = res.data.dKeyword
     })
   }
 }
