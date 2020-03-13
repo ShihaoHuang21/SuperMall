@@ -10,41 +10,7 @@
     <tab-control
       class="tab-control"
       :titles="['流行', '新款', '精选']"
-      @tabClick="tabClick(index)"
     ></tab-control>
-
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
   </div>
 </template>
 
@@ -87,22 +53,6 @@ export default {
       // this.keywords = res.data.keywords
       // this.dKeyword = res.data.dKeyword
     })
-  },
-  methods: {
-    tabClick(index) {
-      // switch (index) {
-      //   case 0:
-      //     this.currentType = 'pop'
-      //     break
-      //   case 1:
-      //     this.currentType = 'new'
-      //     break
-      //   case 2:
-      //     this.currentType = 'sell'
-      //     break
-      // }
-      console.log('222222', index)
-    }
   }
 }
 </script>

@@ -12,7 +12,6 @@
       :titles="['流行', '新款', '精选']"
       @tabClick="tabClick(index)"
     ></tab-control>
-
     <ul>
       <li></li>
       <li></li>
