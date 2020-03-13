@@ -8,18 +8,12 @@
 
 <script>
 import NavBar from '../../components/common/navbar/NavBar'
-import { getHomeMultidata } from '../../network/home'
+import {} from '../../network/home'
 export default {
   name: '',
   components: { NavBar },
   data() {
     return {}
-  },
-  created() {
-    //请求多个数据
-    getHomeMultidata().then(res => {
-      console.log(res)
-    })
   }
 }
 </script>

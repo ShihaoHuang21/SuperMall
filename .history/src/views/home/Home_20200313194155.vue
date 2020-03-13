@@ -17,9 +17,7 @@ export default {
   },
   created() {
     //请求多个数据
-    getHomeMultidata().then(res => {
-      console.log(res)
-    })
+    getHomeMultidata()
   }
 }
 </script>

@@ -14,12 +14,6 @@ export default {
   components: { NavBar },
   data() {
     return {}
-  },
-  created() {
-    //请求多个数据
-    getHomeMultidata().then(res => {
-      console.log(res)
-    })
   }
 }
 </script>
